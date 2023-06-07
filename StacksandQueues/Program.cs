@@ -15,9 +15,11 @@ namespace StacksandQueues
             linkedlistStack.Push(70);
             linkedlistStack.Push(30);
             linkedlistStack.Push(56);
-
-
             linkedlistStack.Display();
+            linkedlistStack.Pop();
+            
+            linkedlistStack.MakingStackEmpty();
+            linkedlistStack.Display();
+
         }
-    }
-}
+    } }

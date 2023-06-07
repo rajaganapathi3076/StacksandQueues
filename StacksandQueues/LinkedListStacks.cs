@@ -43,11 +43,43 @@ namespace StacksandQueues
                 Console.WriteLine("Stacks is empty");
             }
         }
-
-
-
-        public bool IsEmpty()
+        public int Peek()
         {
-            return top == null;
+            if (top != null)
+            {
+                Console.WriteLine("\n{0}  is topmost element in stack:",top.Data);
+                return top.Data;
+            }
+            else
+            {
+                Console.WriteLine("Stack is empty");
+                return 0;
+            }
         }
-}   }
+        public void Pop()
+        {
+            int topData=Peek();
+            if (topData != 0)
+            {
+                Console.WriteLine("\n{0}  is removed from the stack:", topData);
+                top = top.Next;
+            }
+            else
+            {
+                Console.WriteLine("Stack is empty");
+            }
+        }
+
+        public void MakingStackEmpty()
+        {
+            while(top != null)
+            {
+                Peek();
+                Pop();
+            }
+            //Console.WriteLine("Stack is empty");
+        }
+
+
+
+    }   }

@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LinkedListQueues.cs" />
     <Compile Include="LinkedListStacks.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Program.cs" />

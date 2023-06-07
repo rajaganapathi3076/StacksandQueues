@@ -10,16 +10,16 @@ namespace StacksandQueues
     {
         static void Main(string[] args)
         {
-            LinkedListStacks linkedlistStack = new LinkedListStacks();
+            LinkedListQueues linkedlistQueues = new LinkedListQueues();
 
-            linkedlistStack.Push(70);
-            linkedlistStack.Push(30);
-            linkedlistStack.Push(56);
-            linkedlistStack.Display();
-            linkedlistStack.Pop();
+            linkedlistQueues.Enqueue(56);
+            linkedlistQueues.Enqueue(30);
+            linkedlistQueues.Enqueue(70);
+            linkedlistQueues.Display();
+            linkedlistQueues.Dequeue();
+
+            linkedlistQueues.Display();
+           
             
-            linkedlistStack.MakingStackEmpty();
-            linkedlistStack.Display();
-
         }
     } }
